@@ -5,8 +5,3 @@
 ## 关联 Issue
 
 <!-- 例如：Closes #123 -->
-
-## 自检清单
-
-- [ ] 本地已通过 `mise run docs:check`
-- [ ] 提交信息符合 Conventional Commits 规范

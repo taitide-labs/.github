@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="lbot-bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071324"/>
+      <stop offset="100%" stop-color="#0E2849"/>
+    </linearGradient>
+    <radialGradient id="lbot-glow" cx="50%" cy="48%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lbot-shell" x1="98" y1="132" x2="414" y2="394" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E3F6B"/>
+      <stop offset="100%" stop-color="#10233E"/>
+    </linearGradient>
+    <linearGradient id="lbot-trim" x1="98" y1="132" x2="414" y2="394" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="lbot-badge" x1="322" y1="308" x2="430" y2="416" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background -->
+  <rect width="512" height="512" fill="url(#lbot-bg)"/>
+  <rect width="512" height="512" fill="url(#lbot-glow)"/>
+
+  <!-- Antenna (Inside r=200 circle-crop safe zone) -->
+  <rect x="248" y="88" width="16" height="50" rx="8" fill="#38BDF8"/>
+  <circle cx="256" cy="76" r="18" fill="#22D3EE"/>
+  <circle cx="256" cy="76" r="28" stroke="#22D3EE" stroke-opacity="0.35" stroke-width="5"/>
+
+  <!-- Side Audio/Sensor Pods -->
+  <rect x="68" y="212" width="32" height="88" rx="16" fill="#1E3F6B" stroke="#38BDF8" stroke-width="5"/>
+  <rect x="412" y="212" width="32" height="88" rx="16" fill="#1E3F6B" stroke="#38BDF8" stroke-width="5"/>
+
+  <!-- Bot Head Chassis -->
+  <rect x="98" y="134" width="316" height="256" rx="84" fill="url(#lbot-shell)" stroke="url(#lbot-trim)" stroke-width="7"/>
+
+  <!-- Visor Screen -->
+  <rect x="132" y="172" width="248" height="130" rx="54" fill="#060E1C" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="4"/>
+
+  <!-- Glowing Cyan Eyes -->
+  <rect x="182" y="210" width="32" height="54" rx="16" fill="#22D3EE"/>
+  <rect x="298" y="210" width="32" height="54" rx="16" fill="#22D3EE"/>
+
+  <!-- Taitide Wave Mouth / Chin Crest -->
+  <path d="M 182 342
+           C 208 326, 230 326, 256 338
+           C 282 350, 304 350, 330 334"
+        stroke="#38BDF8" stroke-width="13" stroke-linecap="round"/>
+
+  <!-- Release Badge (Center 376,362 r=56 -> max distance 217 < 256 safe inside circle crop) -->
+  <circle cx="376" cy="362" r="64" fill="#071324"/>
+  <circle cx="376" cy="362" r="52" fill="url(#lbot-badge)"/>
+  <path d="M 376 334 L 376 390 M 352 358 L 376 334 L 400 358"
+        stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

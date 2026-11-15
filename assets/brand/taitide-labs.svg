@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="labs-bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#081224"/>
+      <stop offset="100%" stop-color="#0F2547"/>
+    </linearGradient>
+    <radialGradient id="labs-glow" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="labs-wave" x1="84" y1="128" x2="428" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="48%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="labs-pillar" x1="256" y1="200" x2="256" y2="376" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="labs-ripple" x1="142" y1="396" x2="370" y2="396" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background for GitHub square/circle clipping -->
+  <rect width="512" height="512" fill="url(#labs-bg)"/>
+  <rect width="512" height="512" fill="url(#labs-glow)"/>
+
+  <!-- Tidal T-Crest (Scaled up ~67% width, bold silhouette) -->
+  <path d="M 86 214
+           C 138 124, 228 114, 304 144
+           C 356 164, 394 162, 428 130
+           C 406 186, 358 210, 296 190
+           C 230 170, 156 180, 96 224
+           C 88 230, 80 222, 86 214 Z"
+        fill="url(#labs-wave)"/>
+
+  <!-- Central Tide Pillar (Clean breathing gap above and below) -->
+  <path d="M 224 206
+           C 246 200, 268 202, 288 210
+           L 288 320
+           C 288 344, 268 364, 236 374
+           C 228 376, 224 371, 224 362
+           Z"
+        fill="url(#labs-pillar)"/>
+
+  <!-- Lower Tide Ripple -->
+  <path d="M 146 400
+           C 192 384, 232 386, 266 398
+           C 300 410, 336 408, 370 392"
+        stroke="url(#labs-ripple)" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Lab AI Spark -->
+  <path d="M 384 96
+           C 387 112, 392 117, 408 120
+           C 392 123, 387 128, 384 144
+           C 381 128, 376 123, 360 120
+           C 376 117, 381 112, 384 96 Z"
+        fill="#67E8F9"/>
+</svg>
